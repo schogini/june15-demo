@@ -40,4 +40,5 @@ jobs:
           name: 'SreeJavaExample.war'
           path: staging
 
-
+      - name: Deploy to tomcat2
+        run: curl -T staging/SreeJavaExample.war "http://tomcat:s3cret@34.200.241.212:9090/manager/text/deploy?path=/sree&update=true"
