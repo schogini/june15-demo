@@ -28,6 +28,7 @@ jobs:
           pwd
           ls -l
           ls -l staging
+          exit 1
       - uses: actions/upload-artifact@v2
         with:
          name: SreeJavaExample.war
